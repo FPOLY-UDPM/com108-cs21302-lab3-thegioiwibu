@@ -10,14 +10,13 @@
  
 #include <stdio.h>
 
-int main(){
+   // Xử lý, tính toán VÀ Hiển thị kết quả
+ printf("Nhap so dien tieu thu (kWh): ");
+scanf("%d", &soDien);
+if (soDien <= 50) {
+    tienDien = soDien * 1678;
+} else if (soDien <= 100) {
+    tienDien = 50 * 1734 + (soDien - 50) * 1734;
+} else if (soDien <= 200) {
     
-    // Khai báo biến
-
-
-    // Nhập dữ liệu
-
-
-    // Xử lý, tính toán VÀ Hiển thị kết quả
-
 }
