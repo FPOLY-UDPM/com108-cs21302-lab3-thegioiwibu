@@ -16,43 +16,26 @@
 // Học lực kém: 3.5 > điểm
 
 #include <stdio.h>
-
-int main(){
-
-    // Khai báo biến
-int main(void) {
-    setlocale(LC_ALL, "");
-
-    float diem;v
-
+int main() {
+    float diem;
     // Nhập dữ liệu
-printf("Nhập điểm của sinh viên (0–10): ");
+    printf("Nhap diem cua sinh vien (0-10): ");
     scanf("%f", &diem);
-
     // Xử lý, tính toán VÀ Hiển thị kết quả
-if (diem < 0 || diem > 10) {
-        printf("Điểm không hợp lệ. Vui lòng nhập từ 0 đến 10.\n");
+    if (diem >= 9 && diem <= 10) {
+        printf("Hoc luc xuat sac\n");
+    } else if (diem >= 8 && diem < 9) {
+        printf("Hoc luc gioi\n");
+    } else if (diem >= 6.5 && diem < 8) {
+        printf("Hoc luc kha\n");
+    } else if (diem >= 5 && diem < 6.5) {
+        printf("Hoc luc trung binh\n");
+    } else if (diem >= 3.5 && diem < 5) {
+        printf("Hoc luc yeu\n");
+    } else if (diem >= 0 && diem < 3.5) {
+        printf("Hoc luc kem\n");
+    } else {
+        printf("Diem khong hop le. Vui long nhap lai.\n");
     }
-    else if (diem >= 9) {
-        printf("Học lực: Xuất sắc\n");
-    }
-    else if (diem >= 8) {
-        printf("Học lực: Giỏi\n");
-    }
-    else if (diem >= 6.5) {
-        printf("Học lực: Khá\n");
-    }
-    else if (diem >= 5) {
-        printf("Học lực: Trung bình\n");
-    }
-    else if (diem >= 3.5) {
-        printf("Học lực: Yếu\n");
-    }
-    else {
-        printf("Học lực: Kém\n");
-    }
-
-    return 0;
-}
     return 0;
 }

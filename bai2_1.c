@@ -16,22 +16,14 @@
 //  Ngược lại: Phương trình có nghiệm x = -b/a 
  
 #include <stdio.h>
-
-int main(){
-    
-    // Khai báo biến
-int main(){
-    
-    // Khai báo biến
-
 int main() {
     float a, b;
     // Nhập dữ liệu
-
     printf("Nhap a: ");
     scanf("%f", &a);
     printf("Nhap b: ");
     scanf("%f", &b);
+    // Xử lý, tính toán VÀ Hiển thị kết quả
     if (a == 0) {
         if (b == 0) {
             printf("Phuong trinh co vo so nghiem\n");
@@ -42,20 +34,5 @@ int main() {
         float x = -b / a;
         printf("Phuong trinh co nghiem x = %.2f\n", x);
     }
-
     return 0;
-}
-
-
-
-
- 
-
-}
-
-    // Nhập dữ liệu
-
-
-    // Xử lý, tính toán VÀ Hiển thị kết quả
-
 }
